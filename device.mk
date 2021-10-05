@@ -21,11 +21,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
-# OPLauncher
-ifeq ($(BUILD_WITH_OPLAUNCHER),true)
-$(call inherit-product, $(LOCAL_PATH)/OPLauncher/oplauncher.mk)
-endif
-
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
@@ -46,7 +41,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-cherish \
+    $(LOCAL_PATH)/overlay-custom \
     $(LOCAL_PATH)/overlay-system
 
 # ANT+
