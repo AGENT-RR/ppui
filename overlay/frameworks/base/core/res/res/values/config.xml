@@ -604,11 +604,10 @@
     <bool name="config_faceAuthOnlyOnSecurityView">true</bool>
 
     <!-- Shows the required view for in-display fingerprint -->
-    <bool name="config_needCustomFODView">true</bool>
     <bool name="config_supportsInDisplayFingerprint">true</bool>
 
-    <!-- Whether device has screen off FOD support -->
-    <bool name="config_supportScreenOffFod">true</bool>
+    <!-- Whether device supports in-display fingerprint when screen if turned off -->
+    <bool name="config_supportScreenOffInDisplayFingerprint">true</bool>
 
     <!-- reference volume index for music stream to limit headphone volume and display warning -->
     <integer name="config_safe_media_volume_index">17</integer>
